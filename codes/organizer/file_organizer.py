@@ -129,33 +129,3 @@ while (runApp):
     except:
         print(f'{userSelection} is invalid. Please select from the options')
 
-
-
-
-# folders = {
-#     "Images" : ['.svg', '.jpeg', '.gif', '.png', '.jpg', '.jfif'],
-#     "Documents": ['.doc', '.docx', '.pdf', '.txt', '.csv', '.pptx', '.xlsx'],
-#     "Archives" : ['.zip', '.rar', '.apk', '.iso'],
-#     'Applications': ['.exe','.msi']
-# }   
-
-
-# file_path = open(f'{desktop_path}/.data.json', 'w')
-# file_path.write(json.dumps(folders))
-# file_path.close();
-
-
-# for folder_name in folders:
-#     folder_path = os.path.join(desktop_path, folder_name)
-#     if not os.path.exists(folder_path):
-#         os.makedirs(folder_path)
-    
-
-# for file_name in os.listdir(desktop_path):
-#     file_path = os.path.join(desktop_path, file_name)
-#     if os.path.isfile(file_path):
-#         for folder_name, extensions in folders.items():
-#             for extension in extensions:
-#                 if file_name.endswith(extension):
-#                     destination_folder = os.path.join(desktop_path, folder_name)
-#                     shutil.move(file_path, destination_folder)
