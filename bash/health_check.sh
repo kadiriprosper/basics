@@ -33,9 +33,9 @@ else
     echo "Log directory already exists."
 fi
 
-timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
+timestamp="$(date +'%Y-%m-%d %H_%M_%S')"
 
-log_file=$("$LOG_DIR/system_health_$timestamp.log" | sed 's/:/_/')
+log_file="$LOG_DIR/system_health_$timestamp.log" 
 
 echo "----------------------------------------------------------------"
 echo "----------------------------------------------------------------"
