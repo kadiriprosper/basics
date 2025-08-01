@@ -35,7 +35,7 @@ fi
 
 timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
 
-log_file="$LOG_DIR/system_health_$timestamp.log"
+log_file=$("$LOG_DIR/system_health_$timestamp.log" | sed 's/:/_/')
 
 echo "----------------------------------------------------------------"
 echo "----------------------------------------------------------------"
