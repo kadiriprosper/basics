@@ -1,0 +1,33 @@
+%TAG ! tag:hostdata:phl:
+---
+host: phl-42
+datacenter:
+  location: &PHL Philadephia
+  cab: !!str 13
+  cab_unit: !!str 3
+downtime_sch: |
+  2018-10-31 - kernel upgrade
+  2019-02-02 - security fix
+roles: &wphost
+  - webserver
+  - wp_database
+
+comments: >
+  Experiencing high I/O
+  since 2018-10-01
+  Currently investigating
+---
+host: phl-43
+datacenter:
+  location: *PHL
+  cab: "13"
+  cab_unit: "4"
+downtime_sch: |
+  2018-10-31 - kernel upgrade
+  2019-02-02 - security fix
+roles: *wphost
+
+comments: >
+  Experiencing high I/O
+  since 2018-10-01
+  Currently investigating
